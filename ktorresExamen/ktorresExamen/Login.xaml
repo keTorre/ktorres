@@ -5,7 +5,8 @@
     <ContentPage.Content>
         <StackLayout>
             <Label Text="LOGIN" FontSize="20" TextColor="Blue" HorizontalOptions="Center"></Label>
-            <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png "></Image>
+            <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png" />
+            
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition></RowDefinition>
