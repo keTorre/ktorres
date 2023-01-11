@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ktorresExamen.Login">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="LOGIN" FontSize="20" TextColor="Blue" HorizontalOptions="Center"></Label>
+            <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png "></Image>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Usuario" FontSize="20" Grid.Row="0" Grid.Column="0"></Label>
+                <Entry x:Name="txtUsuario" Placeholder="Usuario" Grid.Row="0" Grid.Column="1"></Entry>
+                <Label Text=" Contraseña" FontSize="20" Grid.Row="1" Grid.Column="0"></Label>
+                <Entry x:Name="txtContraseña" Placeholder="Contraseña" IsPassword="True" Grid.Row="1" Grid.Column="1" ></Entry>
+            </Grid>
+            <Button x:Name="btnIniciar" Text="Iniciar" Clicked="btnIniciar_Clicked_1"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ktorresExamen.Registro">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lblUsuario"></Label>
+            <Label Text="Registro Estudiante" FontSize="25" TextColor="Green" HorizontalTextAlignment="Center"></Label>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition>
+                    </RowDefinition>
+                    <RowDefinition>
+                    </RowDefinition>
+                </Grid.RowDefinitions>
+                
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition>
+                    </ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Nombre" FontSize="20" Grid.Row="0" Grid.Column="0"></Label>
+                <Entry x:Name="txtNombre" Placeholder="Nombre" Grid.Row="0" Grid.Column="1"></Entry>
+                <Label Text="Monto Inicial" FontSize="20" Grid.Row="1" Grid.Column="0"></Label>
+                <Entry x:Name="txtMontoInicial" Placeholder="Monto Inicial"  Keyboard="Numeric" Grid.Row="1" Grid.Column="1"></Entry>
+
+                <Label Text="Pago Mensual" FontSize="20" Grid.Row="2" Grid.Column="0"></Label>
+                <Label FontSize="18" Grid.Row="2" Grid.Column="1" x:Name="lblPagoMensual" TextColor="Green"/>
+                
+
+
+            </Grid>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+            <Button x:Name="btnCalcularPmensual" Text="Calcular Pmensual" Clicked="btnCalcularPmensual_Clicked"></Button>
+            <Button x:Name="btnGuardarInformacion" Text="Guardar Informacion" Grid.Row="0" Grid.Column="1" Clicked="btnGuardarInformacion_Clicked"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
